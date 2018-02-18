@@ -13,8 +13,8 @@ This API has 4 operations.
 
 POST /marketplace/createproject This will create a project.
 
-Sample request 
-
+request 
+```json
 {
 	"projectDescription" : "testing project",
 	"maxBudget" : "400",
@@ -22,16 +22,18 @@ Sample request
 	"sellerId" : "ID1",
 	"sellerName" : "ABC tech"
 }
-Sample response
-
+```
+response
+```json
 {
     "projectId": 2
 }
+```
 
 
 GET /marketplace/project/{id} This will fetch the project by id.
 
-sample response
+response
 
 
 ```json
@@ -45,7 +47,7 @@ sample response
 
 GET /marketplace/showprojects  This operation will fetch all the open projects.
 
-sample response
+response
 
 ```json
 
@@ -67,7 +69,7 @@ sample response
 
 POST /marketplace/placebid This operation will place a bid for an open project.
 
-Request
+request
 
 ```json
 
@@ -81,7 +83,7 @@ Request
 ```
 
 
-Response 
+response 
 ```json
 {
     "bidId": 1,
